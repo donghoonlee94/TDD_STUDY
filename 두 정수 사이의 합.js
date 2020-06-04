@@ -1,3 +1,5 @@
+// 두 정수 사이의 합을 구해야 함.
+
 const arrayCompare = (a, b) => {
   const array = [];
   const maxNum = a > b ? a : b;

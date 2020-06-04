@@ -2,12 +2,10 @@
 // 예시 : n = 3 , return 수박수, n = 4, return 수박수박
 
 export const solution = (n) => {
-  const water = "수";
-  const melon = "박";
   const arrayWaterMelon = [];
 
   for (let i = 1; i <= n; i++) {
-    let isWaterMelon = i % 2 !== 0 ? water : melon;
+    let isWaterMelon = i % 2 !== 0 ? '수' : '박';
     arrayWaterMelon.push(isWaterMelon);
   }
 
