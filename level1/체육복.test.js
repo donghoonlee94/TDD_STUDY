@@ -11,16 +11,12 @@
 
 import { solution } from "./체육복";
 
-const lost1 = [2, 4];
-const lost2 = [3];
-const reserve1 = [1, 3, 5];
-const reserve2 = [3];
-const reserve3 = [1];
-
 
 describe("체육복", () => {
   it("체육복", () => {
-    expect(solution({ n: 5, lost: lost1, reserve: reserve1 })).toEqual(5);
-    expect(solution({ n: 5, lost: lost1, reserve: reserve2 })).toEqual(4);
+    expect(solution({ n: 5, lost: [2, 4], reserve: [1, 3, 5] })).toEqual(5);
+    expect(solution({ n: 5, lost: [2, 4], reserve: [3] })).toEqual(4);
+    expect(solution({ n: 3, lost: [3], reserve: [1] })).toEqual(2);
+    expect(solution({ n: 8, lost: [1, 3, 5, 6], reserve: [2, 8] })).toEqual(6);
   });
 });
